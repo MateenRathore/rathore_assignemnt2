@@ -1,0 +1,10 @@
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.brandname{
+    color: black;
+}

@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+    color: black;   
+}
+.header{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+}
+.video-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.video-thumbnail{
+    width: 480px;
+    border-radius: 10px 10px 0px 0px;
+}
+.video-heading{
+    margin-left: 40px;
+}
+.datafiles{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.rssfeed{
+    width: 500px;
+    margin-top: 20px;
+}

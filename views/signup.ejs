@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title> Sign Up | Parkinson's Disease App </title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    
+    <div class="main">
+        <div class="signup">
+            <div class="signup-form">
+                <form action="/signup" method="post">
+                    <select name="role" required>
+                        <option value="1">Patient</option>
+                        <option value="2">Physician</option>
+                        <option value="3">Researcher</option>
+                        <option value="4">Junior Researcher</option>
+                    </select>
+                    <select name="organization" required>
+                        <option value="1">Hospital</option>
+                        <option value="2">LNU University</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

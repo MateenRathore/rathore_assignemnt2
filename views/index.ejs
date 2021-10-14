@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title> Login | Parkinson's Disease</title>
+</head>
+<body>
+    
+    <%- include('./partials/header.ejs') %>
+    
+    <div class="main">
+        <div class="login">
+            <div class="login-with-externals">
+                <a class="externalLoginlinks" href="/logingoogle"><button>Login with Gmail</button></a>            
+                <a class="externalLoginlinks" href="/loginfacebook"><button>Login with Facebook</button></a>
+                <a class="externalLoginlinks" href="/logingithub"><button>Login with Github</button></a>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

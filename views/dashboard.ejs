@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title> Dashboard | Parkinson's Disease App </title>
+</head>
+<body>
+    <header class="header">
+        <h2><a class="brandname" href="/dashboard">Parkinson's Disease Portal</a></h2>
+        <a class="logout" href="/logout">Logout</a>
+    </header>
+    <main>
+        
+        <% if(role === 1){ %>
+            <section class="patient-content">
+                <div class="row">
+                    <div class="video-card">
+                        <a href="/videos/1">
+                            <img class='video-thumbnail' src="images/img1.png"/>
+                            <h3 class="video-heading">Strengthening Exercise </h3>
+                        </a>
+                    </div>
+                    <div class="video-card">
+                        <a href="/videos/2">
+                            <img class='video-thumbnail' src="images/img2.png"/>
+                            <h3 class="video-heading">Balancing Exercise </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="video-card">
+                        <a href="/videos/3">
+                            <img class='video-thumbnail' src="images/img3.png"/>
+                            <h3 class="video-heading">Flexibility</h3>
+                        </a>
+                    </div>
+                    <div class="video-card">
+                        <a href="/videos/4">
+                            <img class='video-thumbnail' src="images/img4.png"/>
+                            <h3 class="video-heading">Leg Strengthening</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        <% } else if(role === 2){ %>
+            <section class="physician-content">
+                <div class="row">
+                    <a class="datafiles" href="https://drive.google.com/file/d/1Wu9ghFbAjTvs4UrsoyPnZbdR5Mbbor4K/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 1 file</a>
+                    <a class="datafiles" href="https://drive.google.com/file/d/169_Yd_34XCmWV6KX5QyHsJ30cTAxr2Qx/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 2 file</a>
+                </div>
+                <div class="row">
+                    <a class="datafiles" href="https://drive.google.com/file/d/173Nc6dZtPZVQx8jnLrsG3zKzkn2v9C_6/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 3 file</a>
+                    <a class="datafiles" href="https://drive.google.com/file/d/1IJcqq-4qRqGrnQKe3STKqdnnOjgMNVmZ/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 4 file</a>
+                </div>
+                <div class="row">
+                    <a class="datafiles" href="https://drive.google.com/file/d/1Xr73cgl5TnKJpTlq9-XKhWTHp3mo43Cd/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 5 file</a>
+                    <a class="datafiles" href="https://drive.google.com/file/d/1XcZ-br8atCU8YF9nlGiTU2PyEHey60MJ/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 6 file</a>
+                </div>
+            </section>
+        <% } else if(role === 3 || role === 4 ){ %>
+            <section class="physician-content">
+                <div class="row">
+                    <div>
+                        <div class="row">
+                            <a class="datafiles" href="https://drive.google.com/file/d/1Wu9ghFbAjTvs4UrsoyPnZbdR5Mbbor4K/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 1 file</a>
+                            <a class="datafiles" href="https://drive.google.com/file/d/169_Yd_34XCmWV6KX5QyHsJ30cTAxr2Qx/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 2 file</a>
+                        </div>
+                        <div class="row">
+                            <a class="datafiles" href="https://drive.google.com/file/d/173Nc6dZtPZVQx8jnLrsG3zKzkn2v9C_6/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 3 file</a>
+                            <a class="datafiles" href="https://drive.google.com/file/d/1IJcqq-4qRqGrnQKe3STKqdnnOjgMNVmZ/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 4 file</a>
+                        </div>
+                        <div class="row">
+                            <a class="datafiles" href="https://drive.google.com/file/d/1Xr73cgl5TnKJpTlq9-XKhWTHp3mo43Cd/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 5 file</a>
+                            <a class="datafiles" href="https://drive.google.com/file/d/1XcZ-br8atCU8YF9nlGiTU2PyEHey60MJ/view?usp=sharing" target="blank"> <i class="fa fa-file-excel-o fa-4x" aria-hidden="true"></i> Data 6 file</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row rssfeed">
+                            <script async defer src='https://p3k.org/rss/main.js?align=initial&amp;boxFillColor=%23ffead2&amp;compact=false&amp;fontFace=10pt%20sans-serif&amp;frameColor=%23b3a28e&amp;headless=false&amp;height=300&amp;linkColor=%232c7395&amp;maxItems=7&amp;radius=5&amp;showXmlButton=true&amp;textColor=%2395412b&amp;titleBarColor=%2390a8b3&amp;titleBarTextColor=%23ffead2&amp;url=https%3A%2F%2Fparkinsonsnewstoday.com%2Ffeed%2F&amp;width=500'></script>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        <% } %>
+        
+    </main>
+</body>
+</html>
